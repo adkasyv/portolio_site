@@ -62,8 +62,34 @@ strong {
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-.overlay__inner {
+/* .overlay__inner {
   max-width: 36rem;
+} */
+
+@media (min-width: 320px) {
+  .overlay__inner {
+    max-width: 13rem;
+  }
+}
+@media (min-width: 420px) {
+  .overlay__inner {
+    max-width: 15rem;
+  }
+}
+@media (min-width: 620px) {
+  .overlay__inner {
+    max-width: 20rem;
+  }
+}
+@media (min-width: 820px) {
+  .overlay__inner {
+    max-width: 27rem;
+  }
+}
+@media (min-width: 920px) {
+  .overlay__inner {
+    max-width: 33rem;
+  }
 }
 
 .overlay__title {
@@ -123,6 +149,7 @@ strong {
   align-items: center;
   font-size: 0.875rem;
   font-weight: 600;
+  padding: 2%;
   color: var(--light-color);
   background: var(--dark-color);
   border: none;
@@ -151,7 +178,7 @@ strong {
 a {
   text-decoration: none;
   color: var(--dark-color);
-  width: 100%;
+  width: 70px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -194,9 +221,10 @@ a {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
   .overlay {
     padding: 1.5rem;
+    /* padding: 3.5rem; */
   }
 
   .overlay__btns {
@@ -211,5 +239,17 @@ a {
 
   .overlay__btn {
     margin-bottom: 1rem;
+  }
+}
+
+/* @media max-width: 320px {
+  .overlay {
+    padding: 2rem;
+  }
+} */
+
+@media (max-width: 320px) {
+  .overlay {
+    padding: 1rem;
   }
 }
